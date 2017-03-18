@@ -1,0 +1,590 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/33b204a1d5.js"></script>
+  
+    <link rel="stylesheet"
+          href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="../project-3-business-card/main-card.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt|Lato|Open+Sans:300|Playfair+Display|Raleway|Josefin-Slab" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Rock+Salt" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+
+
+    <header class="header">
+
+        <nav class="nav">
+            <div class="menu">
+                <input type="checkbox" class="menu__hamburger-control"
+                       id="hamburger-control"/>
+                <label for="hamburger-control" class="menu__mask"></label>
+                <div class="menu__backdrop-right"></div>
+                <li class="menu__hamburger">
+                    <label for="hamburger-control">
+                        <i class="fa fa-bars fa-5x menu__hamburger-icon"
+                           aria-hidden="true"></i></label>
+                </li>
+                <ul class="menu__container">
+                    <li class="menu__item"><h2
+                            class="header__title">Natalie
+                        Vaslavsky</h2></li>
+                    <li class="menu__item"><a href="#about">About</a></li>
+                    <li class="menu__item">
+                      <a href="#projects">Projects</a>
+<!--<label for="sub">Projects</label>-->
+                    </li>
+                    <input type="checkbox" id="sub"
+                           class="menu__submenu-control"/>
+                    <ul class="menu__submenu">
+                  
+                        <li class="menu__submenu-item">Forms & Inputs</li>
+                        <li class="menu__submenu-item">Calculator</li>
+                        <li class="menu__submenu-item">UI Clone</li>
+                        <li class="menu__submenu-item">Product Listing</li>
+                        <li class="menu__submenu-item">Business Card</li>
+                    </ul>
+                    <li class="menu__item"><a href="#skills">Skills</a></li>
+                    <li
+                            class="menu__item"><a href="#contact-section">
+                        Contact</a></li>
+                    </li>
+                    <li class="menu__item">
+                        <div class="modal-search">
+                            <input id="search-bar" class="modal-search__search-bar"
+                                   type="text"/>
+                            <label for="open-modal"><i
+                                    class="fa fa-search modal-search__search-icon" aria-hidden="true"></i></label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--Modal search component placed here so
+            modal-search__background width is relative to nav width-->
+            <input type="radio" name="modal-search" id="open-modal"
+                   class="modal-search__open-control">
+            <input type="radio" id="close-modal" name="modal-search"
+                   class="modal-search__close-control"
+                   checked/>
+            <div class="modal-search__background">
+                <div class="modal-search__display"><span
+                        class="modal-search__message">search is temporarily
+                        disabled</span><label
+                        class="modal-search__close-btn" for="close-modal">
+                </label>
+                    <div class="modal-search__device-width--first"></div>
+                    <div class="modal-search__device-width--second"></div>
+                    <div class="modal-search__device-width--third"></div>
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+        <section id="about" class="about">
+            <h1 class="about__title">About</h1>
+            <div class="section-content">
+                <p>I am a currently studying as a Front End Web Developer at Bov Academy.
+                   My recent background is a backend Java Developer. I become interested in Modern web development both: frontend and backend. After I graduate from Modern Developer's frontend program I will continue my study as modern backend developer and become Full Stack Web developer.
+                   I am eager to graduate from Full Stack Web Developer program to have expertize to develop <em>World Class Web Projects.</em> Outside of my full time job and learning at Bov Academy, I can be found working out at the gym, walking with my dog, socializing with my family, friends.</p>
+            </div>
+        </section>
+  <hr>
+        <section id="projects" class="projects">
+           
+            <h1 class="projects__title">Projects</h1>
+            
+                <div class="tab">
+                    <input class="tab__control" type="radio" name="tabs" id="forms"/>
+                    <label class="tab__label" for="forms">Forms and
+                        Inputs</label>
+                    <div class="carousel">
+                        <div class="carousel__container">
+                            <input class="carousel__slider-control"
+                                   type="radio" name="forms"
+                                   id="forms-button1" checked/>
+                            <div class="carousel__slider-content">
+                                    <p class="carousel__slider-paragraph">These projects were part of our
+                                        introductory CSS courses. I was able to familiarize myself with CSS and how styles are applied. Additionally, I utilized a JS validation library I wrote.
+                                    </p>
+                            </div>
+
+                            <input class="carousel__slider-control"
+                                   type="radio" name="forms"
+                                   id="forms-button2"/>
+                            <img class="carousel__slider-image"
+                                 src="images/color-builder.gif">
+
+                            <input class="carousel__slider-control"
+                                   type="radio" name="forms"
+                                   id="forms-button3"/>
+                            <img class="carousel__slider-image"
+                                 src="images/login-form.gif">
+
+                            <input class="carousel__slider-control"
+                                   type="radio" name="forms"
+                                   id="forms-button4"/>
+                            <img  class="carousel__slider-image"
+                                  src="images/signup.gif" height="350"
+                                  width="266">
+
+                            <input class="carousel__slider-control"
+                                   type="radio" name="forms"
+                                   id="forms-button5"/>
+                            <img class="carousel__slider-image"
+                                 src="images/credit-debit.gif">
+
+                            <input class="carousel__slider-control"
+                                   type="radio" name="forms"
+                                   id="forms-button6"/>
+                            <img class="carousel__slider-image"
+                                  src="images/shipping-billing.gif"
+                                  height="350" width="241">
+
+                            <input class="carousel__slider-control"
+                                   type="radio" name="forms"
+                                   id="forms-button7"/>
+                            <img class="carousel__slider-image"
+                                 src="images/survey.png" height="350" width="241">
+
+                            <label for="forms-button7"
+                                   class="control-1-forms carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="forms-button2"
+                                   class="control-1-forms carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="forms-button1"
+                                   class="control-2-forms carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="forms-button3"
+                                   class="control-2-forms carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="forms-button2"
+                                   class="control-3-forms carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="forms-button4"
+                                   class="control-3-forms carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="forms-button3"
+                                   class="control-4-forms carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="forms-button5"
+                                   class="control-4-forms carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="forms-button4"
+                                   class="control-5-forms carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="forms-button6"
+                                   class="control-5-forms carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="forms-button5"
+                                   class="control-6-forms carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="forms-button7"
+                                   class="control-6-forms carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="forms-button6"
+                                   class="control-7-forms carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="forms-button1"
+                                   class="control-7-forms carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <div class="carousel__container-caption">
+                                <p><span class="carousel__caption-heading">
+                                    Technologies:</span>
+                                    HTML5, CSS3, JavaScript</p>
+                              
+ <p> <i class="fa fa-github fa-2" area-hidden="true"></i><a class="project__github" href="https://github.com/ModernTek/mdForms/">Source</a>
+                                     |
+                                    <a href="https://moderntek.github.io/mdForms/">Demo</a>
+          </p>
+                            </div>                          
+  
+                            <div class="carousel__bullet-container">
+                                <label for="forms-button1"
+                                       class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="forms-button2"
+                                       class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="forms-button3"
+                                       class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="forms-button4"
+                                       class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="forms-button5"
+                                       class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="forms-button6"
+                                       class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="forms-button7"
+                                       class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input class="tab__control" type="radio" name="tabs"
+                           id="calculator"/>
+                    <label class="tab__label" for="calculator">Calculator</label>
+                    <div class="carousel">
+                        <div class="carousel__container">
+                            <input class="carousel__slider-control" type="radio" name="calc" id="calc-button1" checked/>
+                            <div class="carousel__slider-content">
+                                    <p class="carousel__slider-paragraph">This project was the first where I
+                                        applied functionality with vanilla JS HTML / CSS code. 
+          </p>
+                            </div>
+                            <input class="carousel__slider-control" type="radio" name="calc" id="calc-button2"/>
+
+                            <img class="carousel__slider-image"
+                                 src="images/calculator.gif" width="254" height="350">
+                            <input class="carousel__slider-control" type="radio" name="calc" id="calc-button3"/>
+                            <img class="carousel__slider-image"
+                                  src="http://placehold.it/150x300">
+
+                            <label for="calc-button3" class="control-1-calc carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="calc-button2" class="control-1-calc carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="calc-button1" class="control-2-calc carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="calc-button3" class="control-2-calc carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="calc-button2" class="control-3-calc carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="calc-button1" class="control-3-calc carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <div class="carousel__container-caption">
+                                <p><span class="carousel__caption-heading">Technologies:</span>
+                                    HTML5, CSS3, JavaScript</p>
+                             
+         <p> <i class="fa fa-github fa-2" area-hidden="true"></i><a class="project__github" href="https://github.com/ModernTek/calculator">Source</a>
+                                     |
+                                    <a href="https://moderntek.github.io/calculator/">Demo</a>
+          </p>                     
+                            </div>
+                            <div class="carousel__bullet-container">
+                                <label for="calc-button1" class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="calc-button2" class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="calc-button3" class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input class="tab__control" type="radio" name="tabs"
+                    id="ui-clone"/>
+                    <label class="tab__label" for="ui-clone">UI Framework</label>
+                    <div class="carousel">
+                        <div class="carousel__container">
+                            <input class="carousel__slider-control" type="radio" name="ui-clone" id="ui-button1" checked/>
+                            <div class="carousel__slider-content">
+                                    <p class="carousel__slider-paragraph">This is collaboration project which consists of six people. I have developed the following components: card, flip card, accordions, two horizontal tabs, vertical tab, wave button (CSS only), simple pagination, moving pagination, rainbow form, innovative color button.
+                                    </p>
+                            </div>
+
+                            <input class="carousel__slider-control" type="radio" name="ui-clone" id="ui-button2"/>
+
+                            <img class="carousel__slider-image"
+                                    src="images/encyclopedia-profiles.png"/>
+                            <input class="carousel__slider-control" type="radio" name="ui-clone" id="ui-button3"/>
+                            <img class="carousel__slider-image"
+                                 src="images/encyclopedia-profiles.gif"/>
+
+                            <label for="ui-button3" class="control-1-ui carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="ui-button2" class="control-1-ui carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="ui-button1" class="control-2-ui carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="ui-button3" class="control-2-ui carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="ui-button2" class="control-3-ui carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="ui-button1" class="control-3-ui carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <div class="carousel__container-caption">
+                                <p><span class="carousel__caption-heading">Technologies:</span>
+                                    HTML5, CSS3</p>
+                              
+<p> <i class="fa fa-github fa-2" area-hidden="true"></i><a class="project__github" href="https://github.com/ModernTek/Hackathon-UI-Frameworks">Source</a>
+                                     |
+                                    <a href="https://jaymesphimmachack.github.io/Hackathon-UI-Frameworks/">Demo</a>
+          </p>                               
+                            </div>
+                            <div class="carousel__bullet-container">
+                                <label for="ui-button1" class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="ui-button2" class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="ui-button3" class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input class="tab__control" type="radio" name="tabs"
+                           id="product-listing"/>
+                    <label class="tab__label" for="product-listing">Product Listing</label>
+                    <div class="carousel">
+                        <div class="carousel__container">
+                            <input class="carousel__slider-control" type="radio" name="product-listing" id="product-button1" checked/>
+                            <div class="carousel__slider-content">
+                                    <p class="carousel__slider-paragraph">The product listing project gave me
+                                        the opportunity to develop an e-commerce store and shopping cart. I further learned to apply Java Script to generate page content dynamically. I was learning as how to have deal with data objects in Java Script.
+                                    </p>
+                            </div>
+
+                            <input class="carousel__slider-control" type="radio" name="product-listing" id="product-button2"/>
+
+                            <img class="carousel__slider-image"
+                                 src="images/cart-item.png">
+                            <input class="carousel__slider-control" type="radio" name="product-listing" id="product-button3"/>
+                            <img class="carousel__slider-image"
+                                 src="images/shopping-cart.gif"/>
+
+                            <label for="product-button3" class="control-1-product carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="product-button2" class="control-1-product carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="product-button1" class="control-2-product carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="product-button3" class="control-2-product carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="product-button2" class="control-3-product carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="product-button1" class="control-3-product carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <div class="carousel__container-caption">
+                                <p><span class="carousel__caption-heading">Technologies:</span>
+                                    HTML5, CSS3, JavaScript</p>
+                               
+                              <p> <i class="fa fa-github fa-2" area-hidden="true"></i><a class="project__github" href="https://github.com/ModernTek/Shopping-Cart">Source</a>
+                                     |
+                                    <a href="https://github.io/ModernTek/Shopping-Cart/">Demo</a>
+          </p>                     
+
+                            </div>
+                            <div class="carousel__bullet-container">
+                                <label for="product-button1" class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="product-button2" class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="product-button3" class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                
+            
+                <div class="tab">
+                    <input class="tab__control" type="radio" name="tabs" id="biz-card"/>
+                    <label class="tab__label" for="biz-card">Business
+                        Card</label>
+                    <div class="carousel">
+                        <div class="carousel__container">
+                            <input class="carousel__slider-control" type="radio" name="biz-card" id="bizcard-button1" checked/>
+                            <div class="carousel__slider-content">
+                                    <p class="carousel__slider-paragraph">In this
+                                        project I learned
+                                        how to create business card, how to flip card.
+                                        
+                                    </p>
+                            </div>
+
+                            <input class="carousel__slider-control" type="radio" name="biz-card" id="bizcard-button2"/>
+
+                            <img class="carousel__slider-image" src="images/business-card.png">
+                            <input class="carousel__slider-control" type="radio" name="biz-card" id="bizcard-button3"/>
+                            <img class="carousel__slider-image"
+                                 src="images/bizcard-front.png">
+
+                            <label for="bizcard-button3" class="control-1-bizcard carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="bizcard-button2" class="control-1-bizcard carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="bizcard-button1" class="control-2-bizcard carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="bizcard-button3" class="control-2-bizcard carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <label for="bizcard-button2" class="control-3-bizcard carousel__previous-btn"><i class="fa fa-chevron-left carousel__chevron" aria-hidden="true"></i></label>
+                            <label for="bizcard-button1" class="control-3-bizcard carousel__next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                            <div class="carousel__container-caption">
+                                <p><span class="carousel__caption-heading">Technologies:</span>
+                                    HTML5, CSS3</p>
+                              <p> <i class="fa fa-github fa-2" area-hidden="true"></i><a class="project__github" href="https://github.com/ModernTek/businessCard">Source</a>
+                                     |
+                                    <a href="https://github.io/ModernTek/businessCard">Demo</a>
+          </p> 
+                            
+                            </div>
+                            <div class="carousel__bullet-container">
+                                <label for="bizcard-button1" class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="bizcard-button2" class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                                <label for="bizcard-button3" class="carousel__bullet"><i class="fa fa-circle fa-1" aria-hidden="true"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--End Tab Area -->
+        </section>
+       <hr> 
+ 
+        
+        
+           <section id="skills" class="skills">
+    <h1 class="skills__title">Skills</h1>
+     <div class="skills__description">        
+       <p>I have competency as a frontend developer. I also have skills in backend development utilizing Java technologies and relational database. After completing my frontend track, I will acquire skills as a Modern Full-Stack Web Developer.</p>
+             </div>   
+    <div class="skills__wrapper">
+      <div class="skill__meters">
+        <div class="meter__fe">50%</div>
+        <div class="meter__be">50%</div>
+      </div>
+      <div class="bar-graph__container graph__fe">
+        <h3 class="bar-graph__title">Frontend Development</h3>
+        <div class="bar-graph__levels">
+          <span class="bar-graph__level">Expert</span>
+          <span class="bar-graph__level">Proficient</span>
+          <span class="bar-graph__level">Competent</span>
+          <span class="bar-graph__level">Learning</span>
+        </div>
+        <div class="bar-graph__bars">
+          <div class="bar-graph__bar level-2 blue">
+            <div class="tooltip">Using it for several months.</div>
+          </div>
+          <div class="bar-graph__bar level-2 pink">
+            <div class="tooltip"> using several months</div>
+          </div>
+          <div class="bar-graph__bar level-1 green">
+            <div class="tooltip">Eager to learn.</div>
+          </div>
+          <div class="bar-graph__bar level-1 orange">
+            <div class="tooltip">Eager to learn</div>
+          </div>
+          <div class="bar-graph__bar level-1 yellow">
+            <div class="tooltip">Learning at the moment.</div>
+          </div>
+        </div>
+        <div class="bar-graph__items">
+          <span class="bar-graph__item">Javascript</span>
+          <span class="bar-graph__item">HTML5/CSS3</span>
+          <span class="bar-graph__item">ReactJS</span>
+          <span class="bar-graph__item">jQuery</span>
+          <span class="bar-graph__item">Sketch</span>
+        </div>
+      </div>
+      <div class="bar-graph__container graph__be">
+        <h3 class="bar-graph__title">Backend Development</h3>
+        <div class="bar-graph__levels">
+          <span class="bar-graph__level">Expert</span>
+          <span class="bar-graph__level">Proficient</span>
+          <span class="bar-graph__level">Competent</span>
+          <span class="bar-graph__level">Learning</span>
+        </div>
+        <div class="bar-graph__bars">
+          <div class="bar-graph__bar level-4 pink">
+            <div class="tooltip">Using for several years!</div>
+          </div>
+          <div class="bar-graph__bar level-1 orange">
+            <div class="tooltip">Took some classes!</div>
+          </div>
+          <div class="bar-graph__bar level-1 green">
+            <div class="tooltip">Have some exposure!</div>
+          </div>
+          <div class="bar-graph__bar level-4 blue">
+            <div class="tooltip">Can write very complex SQL query!</div>
+          </div>
+          <div class="bar-graph__bar level-1 yellow">
+            <div class="tooltip">Eager to to learn.</div>
+          </div>
+        </div>
+        <div class="bar-graph__items">
+          <span class="bar-graph__item">Java</span>
+          <span class="bar-graph__item">Ruby</span>
+          <span class="bar-graph__item">NodeJS</span>
+          <span class="bar-graph__item">MySQL</span>
+          <span class="bar-graph__item">MongoDB</span>
+        </div>
+      </div>
+      <div class="bar-graph__container graph__ot">
+        <h3 class="bar-graph__title">Other Skills</h3>
+        <div class="bar-graph__levels">
+          <span class="bar-graph__level">Expert</span>
+          <span class="bar-graph__level">Proficient</span>
+          <span class="bar-graph__level">Competent</span>
+          <span class="bar-graph__level">Learning</span>
+        </div>
+        <div class="bar-graph__bars">
+          <div class="bar-graph__bar level-3 pink">
+            <div class="tooltip">Constantly improving</div>
+          </div>
+          <div class="bar-graph__bar level-4 orange">
+            <div class="tooltip">Know how to approach any problem.</div>
+          </div>
+          <div class="bar-graph__bar level-3 green">
+            <div class="tooltip">Result oriented.</div>
+          </div>
+          <div class="bar-graph__bar level-4 blue">
+            <div class="tooltip">I love research things.</div>
+          </div>
+          <div class="bar-graph__bar level-3 yellow">
+            <div class="tooltip">I do well in front of an audience, when I prepared.</div>
+          </div>
+        </div>
+        <div class="bar-graph__items">
+          <span class="bar-graph__item">Written Communication</span>
+          <span class="bar-graph__item">Problem-solving</span>
+          <span class="bar-graph__item">Project Management</span>
+          <span class="bar-graph__item">Research</span>
+          <span class="bar-graph__item">Public Speaking</span>
+        </div>
+      </div>
+  </section>
+             <section id="contact-section" class="contact-section">
+               <h1 class="contact-section__title">Contact</h1>
+             <div class="card__wrapper" >
+      <div class="contact__front">
+        <div class = "contact__saying">
+          <p>A creative man is motivated by desire to achieve, not by desire to beat others.</p>
+        </div>
+            <div class="contact__header">
+               <span class="contact__name">
+              Natalie Vaslavsky</span>
+           </div>
+          <div class="contact__front-bottom">
+            <p>Passionate Future Full Stack Web Developer</p>
+            <p>Currently learning at Elite Bov Academy.</p>
+           
+      
+    <footer class="contact__footer">
+      <div class="contact__encyc-link left">
+        <img src="http://4.1m.yt/i7lEcDq.png" alt="Encyclopedia">
+        <span class="block">Natalie Vaslavsky on </span>
+        <span class="contact__highlight">Encyclopedia.MD</span></span>
+      </div>
+      <div class="contact__social-links contact__right">
+        <ul class=contact__social-links-list">
+   
+          <li><a href="https://github.com/js-cha"><img src="http://4.1m.yt/EgCF1Qz.png" alt="GitHub"></a></li>
+          <li><a href="#"><img src="http://4.1m.yt/lreIIpa.png" alt="Facebook"></a></li>
+          <li><a href="#"><img src="http://4.1m.yt/6tg5IC.png" alt="LinkedIn"></a></li>
+        </ul>
+      </div> <!--social links -->
+    </footer>   
+       </div><!--contact front-->
+                                                                           
+        <div class="contact__back">
+          <div class="contact__back-content">
+            <div class="contact__col1">
+              <div class="contact__photo">    
+                <img src="http://i.imgur.com/HxdaKmB.jpg" height="240"></img>
+              </div>
+            </div>
+            <div class="contact__col2">
+              <ul class="contact__contact">
+                <li>
+                 <a  href="mailto:nvaslav48@gmail.com">
+                <i class="contact__fa-envelope fa fa-envelope"> </i>
+                nvaslav48@gmail.com
+              </a>
+              </li>
+            <li>
+               <a 
+         target="_blank"  href="http://www.natatekllc.com">
+                <i class="contact__fa-database fa fa-database"> </i>
+                 natatekllc.com
+              </a>
+              </li>
+              <li>
+                <a
+                   target="_blank"
+                   href="http://www.natatekllc.com/natalievaslavsky_resume.pdf">
+                <i class="contact__file-text fa fa-file-text">  </i>
+                Resume
+                </a>
+              </li>
+              <li>
+                <a
+                   target="_blank"
+                   href="http://github.com/moderntek">
+              <i class="contact__fa-github fa fa-github"></i>
+                /moderntek
+                </a>
+               </li>
+             
+              </ul>
+            </div> <!--back content -->
+          </div> <!--back-->
+          
+    </div>
+                                                        
+ </section> 
+  <footer class="copyright">&copy; 2017 Natalie Vaslavsky</footer>
+</body>
+
+</html>
+
